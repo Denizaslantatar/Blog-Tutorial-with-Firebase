@@ -112,4 +112,4 @@ If you have any feedback, please contact us at jsdenizas@gmail.com.
 For support, email jsdenizas@gmail.com.
 ## Used technologies
 
-**Client:** Vue 3, Vite, Javascript, Firebase, Html, Css.
+**Client:** Vue 3, Javascript, Firebase, Html, Css.
