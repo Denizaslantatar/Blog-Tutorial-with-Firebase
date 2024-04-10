@@ -1,37 +1,32 @@
 <script>
-      export default {
-      
-      }
+export default {};
 </script>
 <template>
-  <nav>
-      <router-link :to="{name:'Home'}">Essay List</router-link>
-      <router-link :to="{name:'AddEssay'}">Create Essay</router-link>
-  </nav>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="navbar-brand">
+                        <router-link class="nav-it" :to="{name: 'Home'}">Essay List</router-link>
+                    </li>
+                    <li class="navbar-brand">
+                        <router-link class="nav-it" :to="{name: 'AddEssay'}">Create Essay</router-link>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </template>
-
-<style>
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 60px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #333;
-  text-transform: uppercase;
+<style scoped>
+.navbar {
+    padding-left: 20px;
 }
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-nav li {
-  list-style-type: none;
-  margin-left: 20px;
-}
-nav a {
-  color: #333;
-}
-nav .router-link-active {
-  color:#eb4d4b ;
+.nav-it {
+    margin: 0 10px;
+    color: rgb(234, 238, 241);
+    text-decoration: none;
 }
 </style>
